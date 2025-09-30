@@ -18,7 +18,6 @@ public class MinaPrimeiraXanela extends Application {
 			
 			Button btn = new Button ("Cambiar titulo");
 
-			//Creamos botón que al presionar cambie el titulo
 			btn.setOnAction(e -> {
 	            if (stage.getTitle().equals("Miña primeira xanela")) {
 	            	stage.setTitle("Titulo cambiado");
@@ -26,7 +25,6 @@ public class MinaPrimeiraXanela extends Application {
 	            	stage.setTitle("Miña primeira xanela");
 	            }
 	        });
-			
 			
 			group.getChildren().add(btn);
 

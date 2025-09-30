@@ -21,7 +21,7 @@ public class ClickMe extends Application {
         // Creamos Label con contador inicial
 		Label label = new Label(String.valueOf(contador));
 
-		VBox root = new VBox(10);
+		VBox group = new VBox(10);
 		
         // Creamos botón
 		Button btn = new Button("Incrementar");

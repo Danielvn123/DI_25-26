@@ -22,7 +22,6 @@ public class CambiarColorDeFondo extends Application {
 			Button btn2 = new Button ("Verde");
 			Button btn3 = new Button ("Azul");
 
-			//Creamos botones que al presionar cambian de color
 			btn.setOnAction(e -> {
 				root.setBackground(new Background(new BackgroundFill(Color.RED, null, null)));			
 			});	
@@ -34,7 +33,6 @@ public class CambiarColorDeFondo extends Application {
 			});	
 			root.getChildren().addAll(btn,btn2,btn3);
 
-			//Configuramos stage
 			Scene scene = new Scene(root, 300, 200);
 			stage.setScene(scene);
 			stage.setTitle("Miña primeira xanela");
