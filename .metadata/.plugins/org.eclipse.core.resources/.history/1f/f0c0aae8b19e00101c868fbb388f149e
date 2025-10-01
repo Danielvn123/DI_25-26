@@ -1,0 +1,73 @@
+package com.jdojo.intro;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+
+public class Minicuestionario extends Application {
+
+	public static void main(String[] args) {
+		Application.launch(args);
+	}
+
+	@Override
+	public void start(Stage stage) throws Exception {
+		
+		//Para que salga en vertical
+		VBox root = new VBox();
+		
+		//Creamos textos
+		Label label1 = new Label("Cal é a capital de Galicia");
+		Label label2 = new Label("-A Coruña");
+		Label label3 = new Label("-Santiago de Compostela");
+		Label label4 = new Label("-Vigo");
+		
+		//Creamos Etiqueta
+		TextField nameFld = new TextField();
+		
+		//Creamos Botón
+		Button btn = new Button("Enviar resposta");
+		
+
+		//Creamos las acciones del botón
+		btn.setOnAction( e->{
+			String respuesta = nameFld.getText();
+			if(respuesta.equalsIgnoreCase("A Coruña") || respuesta.equalsIgnoreCase("Vigo")){
+				
+				root.setBackground(new Background(new BackgroundFill(Color.RED, null, null)));;
+				
+			}else if(respuesta.equalsIgnoreCase("Santiago de Compostela")) {
+				
+				root.setBackground(new Background(new BackgroundFill(Color.GREEN, null, null)));;
+
+			}else if(respuesta.isEmpty()){
+				
+				
+				nameFld.setPromptText("Campo obrigatorio");
+				nameFld.setStyle("-fx-text-fill: red;");
+				root.setBackground(new Background(new BackgroundFill(null, null, null)));;
+
+			}else {
+				
+				root.setBackground(new Background(new BackgroundFill(Color.ORANGE, null, null)));
+			}
+			
+		});
+		
+		//Lo utilizamos para configurar el orden
+		root.getChildren().addAll(label1, label2, label3, label4, nameFld, btn);
+
+		//Para ver la escena
+		Scene scene = new Scene(root, 300, 200);
+		stage.setTitle("Mini Cuestionario");
+		stage.setScene(scene);
+		stage.show();
+	}
+}

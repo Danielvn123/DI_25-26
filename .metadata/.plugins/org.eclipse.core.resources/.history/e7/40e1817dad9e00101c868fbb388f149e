@@ -1,0 +1,39 @@
+package com.jdojo.intro;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+public class Minicuestionario extends Application {
+
+	public static void main(String[] args) {
+		Application.launch(args);
+	}
+
+	@Override
+	public void start(Stage stage) throws Exception {
+		
+		VBox root = new VBox();
+		
+		Label label1 = new Label("Cal é a capital de Galicia");
+		Label label2 = new Label("-A Coruña");
+		Label label3 = new Label("-Santiago de Compostela");
+		Label label4 = new Label("-Vigo");
+		
+		TextField nameFld = new TextField();
+		
+		Button btn = new Button("Enviar resposta");
+
+		
+		root.getChildren().addAll();
+
+		
+		Scene scene = new Scene(root, 300, 200);
+		stage.setTitle("Mini Cuestionario");
+		stage.setScene(scene);
+		stage.show();
+	}
+}

@@ -1,0 +1,22 @@
+package com.jdojo.intro;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class Minicuestionario extends Application {
+
+	public static void main(String[] args) {
+		Application.launch(args);
+	}
+
+	@Override
+	public void start(Stage stage) throws Exception {
+		
+		
+		Scene scene = new Scene(root, 300, 200);
+		stage.setTitle("Mini Cuestionario");
+		stage.setScene(scene);
+		stage.show();
+	}
+}
