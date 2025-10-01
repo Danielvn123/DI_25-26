@@ -1,0 +1,50 @@
+package com.jdojo.intro;
+
+import javafx.application.Application;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+
+public class Cambiarotamanodaxanela extends Application {
+
+	public static void main(String[] args) {
+		Application.launch(args);
+	}
+
+	@Override
+	public void start(Stage stage) throws Exception {
+
+		VBox root = new VBox();
+		HBox primero = new HBox();
+		HBox segundo = new HBox();
+
+		Label label1 = new Label("Novo ancho");
+		Label label2 = new Label("Nova altura");
+		TextField nameFld = new TextField();
+		TextField nameFld2 = new TextField();
+
+		nameFld.setPromptText("Indica o novo ancho");
+		
+		nameFld2.setPromptText("Indica a nova altura");
+		
+		Button btn = new Button("Redimensionar");
+
+		root.getChildren().addAll(primero, segundo, btn);
+		primero.getChildren().addAll(label1, nameFld);
+		segundo.getChildren().addAll(label2, nameFld2);
+
+		Scene scene = new Scene(root, 300, 200);
+		stage.setTitle("Cambiar tamaño da xanela");
+		stage.setScene(scene);
+		stage.show();
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.jdojo.intro;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+public class Cambiarotamanodaxanela extends Application {
+
+	public static void main(String[] args) {
+		Application.launch(args);
+	}
+
+@Override
+public void start(Stage stage) throws Exception {
+
+	VBox root = new VBox();
+
+}
+
+root.getChildren().addAll(label, nameFld, btn, btn2, btn3, label2,msgIntentos);
+
+Scene scene = new Scene(root, 300, 200);
+
+stage.setTitle("Adiviña o número");
+stage.setScene(scene);
+stage.show();
+}
+
+}

@@ -19,7 +19,7 @@ public class ClickMe extends Application {
 	public void start(Stage stage) throws Exception {
 
         // Creamos Label con contador inicial
-		Label label = new Label(String.valueOf(contador));
+		Label label = new Label();
 
 		VBox root = new VBox(10);
 		
@@ -29,7 +29,7 @@ public class ClickMe extends Application {
         // Acción do botón: incrementar contador e actualizar o texto do Label
 		btn.setOnAction(e -> {
 			contador++;
-			label.setText(String.valueOf(contador));
+			label.setText("contador: " + contador);
 		});
 
 		root.getChildren().addAll(label, btn);

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.jdojo.intro.AvidinaoNumero.java&apos; to &apos;AdivinaoNumero.java&apos;&#x0D;&#x0A;- Original project: &apos;HelloFX&apos;&#x0D;&#x0A;- Original element: &apos;com.jdojo.intro.AvidinaoNumero.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.jdojo.intro.AdivinaoNumero.java&apos;" description="Rename compilation unit &apos;AvidinaoNumero.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.jdojo.intro{AvidinaoNumero.java" name="AdivinaoNumero.java" references="false" stamp="1759231814739" version="1.0"/>
+</session>
