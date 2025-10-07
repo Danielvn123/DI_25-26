@@ -1,0 +1,27 @@
+package com.jdojo.intro;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+public class Exercicio8_MiniCalculadora extends Application {
+	
+	public static void main(String[] args) {
+		Application.launch(args);
+	}
+
+	@Override
+	public void start(Stage stage) throws Exception {
+		
+		//Para que salga en vertical
+		VBox root = new VBox();
+
+
+	//Para ver la escena
+			Scene scene = new Scene(root, 400, 200);
+			stage.setTitle("Ciclo de vida con consola");
+			stage.setScene(scene);
+			stage.show();
+}
+}

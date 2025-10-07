@@ -1,0 +1,36 @@
+package com.jdojo.intro;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+public class Exercicio8_MiniCalculadora extends Application {
+
+	public static void main(String[] args) {
+		Application.launch(args);
+	}
+
+	@Override
+	public void start(Stage stage) throws Exception {
+
+		// Para que salga en vertical
+		HBox root = new HBox();
+		
+		TextField namefld1 = new TextField("Operando 1");
+		TextField namefld2 = new TextField("Operando 2");
+		
+		Label label1 = new Label("Resultado:");
+
+		root.getChildren().addAll(namefld1, namefld2, label1);
+
+		// Para ver la escena
+		Scene scene = new Scene(root, 600, 50);
+		stage.setTitle("Mini calculadora");
+		stage.setScene(scene);
+		stage.show();
+	}
+}
