@@ -1,0 +1,18 @@
+package com.jdojo.exercicios;
+
+public class Exercicio12_ProductTest {
+		
+		public static void main(String[] args) {
+
+		Exercicio12_ProductTest product = new Exercicio12_ProductTest();
+
+	    Coche.setMarca("Ford");
+	    System.out.println("Marca del coche: " + Coche.getMarca());
+
+	    Coche.setVelocidad(50);
+	    System.out.println("Velocidad inicial: " + Coche.getVelocidad() + "km/h");
+
+	    Coche.acelerar(20);
+	    System.out.println("Velocidad final: " + Coche.getVelocidad() + " km/h");
+	}
+	}

@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="javafx.scene.layout.HBox"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
     <fullyQualifiedTypeName name="javafx.scene.paint.Color"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="javafx.scene.layout.HBox"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
+    <fullyQualifiedTypeName name="javafx.scene.layout.VBox"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.SimpleIntegerProperty"/>
+    <fullyQualifiedTypeName name="javafx.beans.binding.NumberBinding"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="javafx.beans.binding.StringExpression"/>
+    <fullyQualifiedTypeName name="javafx.beans.binding.DoubleBinding"/>
+    <fullyQualifiedTypeName name="javafx.application.Application"/>
+    <fullyQualifiedTypeName name="javafx.scene.shape.Circle"/>
+    <fullyQualifiedTypeName name="javafx.scene.Group"/>
+    <fullyQualifiedTypeName name="javafx.scene.Scene"/>
+    <fullyQualifiedTypeName name="javafx.beans.binding.Bindings"/>
+    <fullyQualifiedTypeName name="javafx.stage.Stage"/>
 </qualifiedTypeNameHistroy>

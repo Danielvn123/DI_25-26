@@ -7,6 +7,9 @@ module HelloFX {
     requires javafx.swing;
     requires java.desktop;
     requires jdk.jsobject;
+	requires javafx.base;
 
-    opens com.jdojo.intro to javafx.fxml, javafx.graphics;
+    opens com.jdojo.intro to javafx.graphics, javafx.base;
+    opens com.jdojo.binding to javafx.graphics, javafx.base;
+    opens com.jdojo.exercicios to javafx.graphics, javafx.base;
     }

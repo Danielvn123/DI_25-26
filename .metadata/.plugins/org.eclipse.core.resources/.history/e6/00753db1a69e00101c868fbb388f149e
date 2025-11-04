@@ -1,8 +1,0 @@
-package com.jdojo.intro;
-
-import javafx.application.Application;
-
-public class Cambiarotamanodaxanela extends Application {
-{
-
-}

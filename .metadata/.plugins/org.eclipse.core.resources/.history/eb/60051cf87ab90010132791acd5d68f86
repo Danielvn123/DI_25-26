@@ -1,0 +1,28 @@
+package com.jdojo.exercicios;
+
+import javafx.beans.property.ReadOnlyProperty;
+
+public class Exercicio13_StudentTest {
+	public static void main(String[] args) {
+		
+		Student estudiante = new Exercicio13_StudentTest("8000","Descoñecido", 0.0);
+		
+		printDetails(estudiante.idProperty());
+		printDetails(estudiante.nameProperty());
+		printDetails(estudiante.averageGradeProperty());
+
+	}
+
+	public static void printDetails(ReadOnlyProperty<?> p) {
+		String name = p.getName();
+		Object value = p.getValue();
+		Object bean = p.getBean();
+		String beanClassName = (bean == null) ? "null" : bean.getClass().getSimpleName();
+		String propClassName = p.getClass().getSimpleName();
+
+		System.out.print(propClassName);
+		System.out.print("[Name:" + name);
+		System.out.print(", Bean Class:" + beanClassName);
+		System.out.println(", Value:" + value + "]");
+	}
+}

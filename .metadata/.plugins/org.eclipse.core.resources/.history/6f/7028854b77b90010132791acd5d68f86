@@ -1,0 +1,8 @@
+package com.jdojo.exercicios;
+
+import javafx.beans.property.ReadOnlyStringProperty;
+
+public class Exercicio13_Student {
+
+	private ReadOnlyStringProperty id = new ReadOnlyStringWrapped(this,"id");
+}

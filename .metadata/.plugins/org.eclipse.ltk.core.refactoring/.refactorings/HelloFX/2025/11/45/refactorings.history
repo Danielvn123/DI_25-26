@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Change method &apos;public void com.jdojo.exercicios.Exercicio12_Product.Employee(String name, double price)&apos; to &apos;public void Employee(String name, double price)&apos;&#x0D;&#x0A;- Original project: &apos;HelloFX&apos;&#x0D;&#x0A;- Original element: &apos;com.jdojo.exercicios.Exercicio12_Product.Employee(...)&apos;&#x0D;&#x0A;- Changed parameters:&#x0D;&#x0A;     double salary" delegate="false" deprecate="true" description="Change method &apos;Employee&apos;" flags="589830" id="org.eclipse.jdt.ui.change.method.signature" input="/src&lt;com.jdojo.exercicios{Exercicio12_Product.java[Exercicio12_Product~Employee~QString;~D" name="Employee" parameter1="String name 0 String name false" parameter2="double salary 1 double price false" stamp="1762253767559" version="1.0"/>
+</session>
