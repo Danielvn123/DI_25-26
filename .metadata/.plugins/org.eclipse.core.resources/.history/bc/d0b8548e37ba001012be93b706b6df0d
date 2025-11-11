@@ -1,0 +1,33 @@
+package com.jdojo.exercicios;
+
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.StringProperty;
+
+public class Exercicio15_CocheFx {
+	public StringProperty marcaProperty() {
+		this.marcaProperty();
+	}
+	public IntegerProperty velocidadeProperty(); 
+
+	public Exercicio15_CocheFx() {
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setVelocidad(int velocidad) {
+		this.velocidad = velocidad;
+	}
+
+	public int getVelocidad() {
+		return velocidad;
+	}
+	public void acelerar(int acelerar) {
+		this.velocidad += acelerar;
+	}
+}

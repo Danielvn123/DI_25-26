@@ -9,18 +9,24 @@
     <fullyQualifiedTypeName name="javafx.scene.layout.HBox"/>
     <fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.VBox"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
     <fullyQualifiedTypeName name="javafx.beans.property.SimpleIntegerProperty"/>
     <fullyQualifiedTypeName name="javafx.beans.binding.NumberBinding"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="javafx.beans.binding.StringExpression"/>
     <fullyQualifiedTypeName name="javafx.beans.binding.DoubleBinding"/>
-    <fullyQualifiedTypeName name="javafx.application.Application"/>
     <fullyQualifiedTypeName name="javafx.scene.shape.Circle"/>
     <fullyQualifiedTypeName name="javafx.scene.Group"/>
     <fullyQualifiedTypeName name="javafx.scene.Scene"/>
     <fullyQualifiedTypeName name="javafx.beans.binding.Bindings"/>
     <fullyQualifiedTypeName name="javafx.stage.Stage"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.ReadOnlyStringProperty"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.ReadOnlyProperty"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.DoubleProperty"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.SimpleDoubleProperty"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.StringProperty"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.IntegerProperty"/>
+    <fullyQualifiedTypeName name="javafx.application.Application"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
 </qualifiedTypeNameHistroy>
