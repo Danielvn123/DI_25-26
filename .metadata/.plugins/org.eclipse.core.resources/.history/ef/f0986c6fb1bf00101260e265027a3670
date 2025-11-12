@@ -1,0 +1,16 @@
+package com.jdojo.exercicios;
+
+import javafx.application.Application;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.stage.Stage;
+
+public class Exercicio20_IndicadorNúmeroParImpar extends Application{
+	
+	public void start(Stage stage) throws Exception {
+		
+		IntegerProperty numeroenteiro = new SimpleIntegerProperty();
+
+	}
+
+}

@@ -1,0 +1,104 @@
+package com.jdojo.exercicios;
+
+import javafx.application.Application;
+import javafx.beans.binding.Bindings;
+import javafx.beans.binding.StringBinding;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+import javafx.util.converter.NumberStringConverter;
+
+/*public class Exercicio20_IndicadorNúmeroParImpar extends Application{
+	
+	public void start(Stage stage) throws Exception {
+		
+		IntegerProperty numeroEnteiro = new SimpleIntegerProperty();
+		
+		TextField numero = new TextField();
+		
+		Label parImpar = new Label();
+		
+		numero.textProperty().bindBidirectional(numeroEnteiro, new NumberStringConverter());
+		
+		StringBinding ParImparBinding = new StringBinding() {
+        
+            @Override
+            protected String computeValue() {
+                int valor = numeroEnteiro.get();
+                return (valor % 2 == 0) ? "PAR" : "IMPAR";
+            }
+        };
+        
+		parImpar.textProperty().bind(ParImparBinding);
+		
+		VBox root = new VBox(new Label("Número:"), numero, new Label("Resultado:"), 
+				parImpar);		
+		Scene scene = new Scene(root, 300, 300);
+		stage.setScene(scene);
+		stage.setTitle("Indicador Par / Impar");
+		stage.show();
+	}
+
+	public static void main(String[] args) {
+		launch();
+	}
+}*/
+
+
+
+public class Exercicio20_IndicadorNúmeroParImpar extends Application {
+
+    @Override
+    public void start(Stage stage) {
+
+        // Propiedade que almacena o número
+        IntegerProperty numeroEnteiro = new SimpleIntegerProperty();
+
+        // Campo de texto para introducir o número
+        TextField numeroField = new TextField();
+
+        // Etiqueta para mostrar PAR / IMPAR
+        Label parImparLabel = new Label();
+
+        // 🔗 Binding bidireccional entre o campo e a propiedade
+        numeroField.textProperty().bindBidirectional(numeroEnteiro, new NumberStringConverter());
+
+        // 🧠 Binding personalizado para determinar se é par ou impar
+        StringBinding parImparBinding = new StringBinding() {
+            @Override
+            protected String computeValue() {
+                int valor = numeroEnteiro.get(); // ✅ Agora si, sobre a propiedade
+                return (valor % 2 == 0) ? "PAR" : "IMPAR";
+            }
+        };
+
+        // Ligamos o binding á propiedade observable
+        parImparBinding.bind(numeroEnteiro);
+
+        // Ligamos a etiqueta ao resultado do binding
+        parImparLabel.textProperty().bind(parImparBinding);
+
+        // Interface
+        VBox root = new VBox(
+                new Label("Número:"),
+                numeroField,
+                new Label("Resultado:"),
+                parImparLabel
+        );
+        root.setSpacing(10);
+
+        Scene scene = new Scene(root, 300, 200);
+        stage.setScene(scene);
+        stage.setTitle("Indicador PAR / IMPAR");
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+}
+
