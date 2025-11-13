@@ -1,0 +1,50 @@
+package com.jdojo.exercicios;
+
+import javafx.application.Application;
+import javafx.beans.binding.Bindings;
+import javafx.scene.Scene;
+import javafx.scene.control.Slider;
+import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+
+public class Exercicio22_SlidersBindingBidireccional extends Application{
+			
+			public void start(Stage stage) throws Exception {
+					
+				//Creamos los slider 
+				Slider sliderH = new Slider();
+				Slider sliderV = new Slider();
+				
+				Slider('0', '100','0');
+
+				//Creamos un contador raiz
+				StackPane root = new StackPane(sliderH);
+				root.setBackground(null);
+				
+				//Creamos scene
+				Scene scene = new Scene(root, 300, 250);
+
+				//Vinculamos a propiedade fill da escena á propiedade pressed do botón
+				scene.fillProperty().bind(
+						Bindings.when(sliderH.pressedProperty())
+							.then(Color.RED)
+							.otherwise(Color.BLUE)
+				);
+				
+				scene.fillProperty().bind(
+						Bindings.when(sliderV.pressedProperty())
+							.then(Color.RED)
+							.otherwise(Color.BLUE)
+				);
+				
+				stage.setTitle("Exercicio 21 Binding helper");
+				stage.setScene(scene);
+				stage.show();
+			}
+
+			public static void main(String[] args) {
+				launch();
+			}
+		}
+

@@ -1,0 +1,7 @@
+package com.jdojo.exercicios;
+
+import javafx.application.Application;
+
+public class Exercicio23_ControlarCirculosSliders extends Application{
+
+}

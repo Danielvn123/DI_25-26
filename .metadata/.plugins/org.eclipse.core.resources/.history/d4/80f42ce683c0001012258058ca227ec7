@@ -1,0 +1,44 @@
+package com.jdojo.exercicios;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Slider;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
+import javafx.stage.Stage;
+
+public class Exercicio23_ControlarCirculosSliders extends Application {
+
+	public void start(Stage stage) throws Exception {
+
+		// Creamos el Pane
+		Pane root = new Pane();
+		
+		//Creamos el Circulo
+		Circle circulo = new Circle(150, 150, 40, Color.ANTIQUEWHITE);
+		circulo.setStroke(Color.BLACK);
+		
+		Slider sliderH = new Slider(10, 100, 40);
+		sliderH.setShowTickLabels(true);
+		sliderH.setMajorTickUnit(20);
+		sliderH.relocate(85, 50);
+		Slider sliderV = new Slider(10, 100, 50);
+		sliderV.setShowTickLabels(true);
+		sliderV.setMajorTickUnit(20);
+		sliderV.relocate(85, 80);
+
+
+		root.getChildren().addAll(sliderH, sliderV);
+	
+		// Creamos la escena
+		Scene scene = new Scene(root, 300, 250);
+		stage.setTitle("Exercicio 23 Controlar un círculo con sliders");
+		stage.setScene(scene);
+		stage.show();
+	}
+
+	public static void main(String[] args) {
+		launch();
+	}
+}

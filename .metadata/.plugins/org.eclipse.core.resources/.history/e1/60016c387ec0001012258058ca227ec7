@@ -1,0 +1,46 @@
+package com.jdojo.exercicios;
+
+import javafx.application.Application;
+import javafx.beans.binding.Bindings;
+import javafx.beans.binding.ObjectBinding;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
+import javafx.stage.Stage;
+
+public class Exercicio21_XanelaBindinghelper extends Application{
+		
+		public void start(Stage stage) throws Exception {
+				
+			//Creamos boton 
+			Button btn = new Button("Pulsa");
+			
+			VBox root = new VBox(btn);
+			root.setBackground(Background.EMPTY);
+			root.setAlignment(Pos.CENTER);
+			
+			/*/ObjectBinding<Paint> objectBindingPaint = Bindings.createObjectBinding(
+					() -> btn.isPressed() ? Color.MAGENTA :Color.AQUA,
+					btn.pressedProperty()
+			);*/
+			
+			//Creamos scene
+			Scene scene = new Scene(root, 300, 250);
+			//scene.fillProperty().bind(objectBindingPaint);
+			
+			//Hacemos que la escena cambie los colores al pulsar el boton
+			scene.fillProperty().bind(Bindings.when(btn.pressedProperty()).then(Color.AQUA).otherwise(Color.MAGENTA));
+			stage.setTitle("Exercicio 21 Binding helper");
+			stage.setScene(scene);
+			stage.show();
+		}
+
+		public static void main(String[] args) {
+			launch();
+		}
+	}
+

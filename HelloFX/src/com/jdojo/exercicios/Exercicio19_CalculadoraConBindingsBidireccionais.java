@@ -46,6 +46,7 @@ public class Exercicio19_CalculadoraConBindingsBidireccionais extends Applicatio
 			prezoTotal.textProperty().bind(totalFormatado);
 			alertaLabel.textProperty().bind(alertaPrezo);	
 			
+			//Para que salga por pantalla
 			VBox root = new VBox(new Label("Precio unitario:"), prezo_unitarioField, new Label("cantidade"), 
 					cantidadField,
 					new Label("Descontos:"), descontoField,

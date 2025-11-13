@@ -1,0 +1,32 @@
+package com.jdojo.exercicios;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
+import javafx.scene.shape.Circle;
+import javafx.stage.Stage;
+
+public class Exercicio23_ControlarCirculosSliders extends Application {
+
+	public void start(Stage stage) throws Exception {
+
+		// Creamos el Circulo
+		
+		Pane root = new Pane();
+		Circle circulo = new Circle();
+		
+		circulo.set
+		
+
+		// Creamos la escena
+		Scene scene = new Scene(root, 200, 150);
+		stage.setTitle("Exercicio 21 Binding helper");
+		stage.setScene(scene);
+		stage.show();
+	}
+
+	public static void main(String[] args) {
+		launch();
+	}
+}

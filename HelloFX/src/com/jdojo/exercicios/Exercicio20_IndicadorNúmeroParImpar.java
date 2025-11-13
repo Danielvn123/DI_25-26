@@ -12,40 +12,40 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.util.converter.NumberStringConverter;
 
-public class Exercicio20_IndicadorNúmeroParImpar extends Application{
-	
+public class Exercicio20_IndicadorNúmeroParImpar extends Application {
+
 	public void start(Stage stage) throws Exception {
-		
+
 		IntegerProperty numeroEnteiro = new SimpleIntegerProperty();
-		
+
 		TextField numero = new TextField();
-		
+
 		Label parImpar = new Label();
-		
+
 		numero.textProperty().bindBidirectional(numeroEnteiro, new NumberStringConverter());
-		
+
 		StringBinding ParImparBinding = new StringBinding() {
 			{
 				this.bind(numeroEnteiro);
-		    }
-			
-            @Override
-            protected String computeValue() {
-                int valor = numeroEnteiro.get();
-                System.out.print(valor);
-                if(!(valor == 0)){
-                    return (valor % 2 == 0) ? "PAR" : "IMPAR";
-                }else {
-                	return "";
-                }
-            }
-        };        
-               
-		parImpar.textProperty().bind(ParImparBinding);
-		
-		numero.textProperty().bindBidirectional(numeroEnteiro, new NumberStringConverter());			
+			}
 
-		VBox root = new VBox(new Label("Número:"), numero, parImpar);		
+			@Override
+			protected String computeValue() {
+				int valor = numeroEnteiro.get();
+				System.out.print(valor);
+				if (!(valor == 0)) {
+					return (valor % 2 == 0) ? "PAR" : "IMPAR";
+				} else {
+					return "";
+				}
+			}
+		};
+
+		parImpar.textProperty().bind(ParImparBinding);
+
+		numero.textProperty().bindBidirectional(numeroEnteiro, new NumberStringConverter());
+
+		VBox root = new VBox(new Label("Número:"), numero, parImpar);
 		Scene scene = new Scene(root, 300, 300);
 		stage.setScene(scene);
 		stage.setTitle("Indicador Par / Impar");
@@ -56,4 +56,3 @@ public class Exercicio20_IndicadorNúmeroParImpar extends Application{
 		launch();
 	}
 }
-

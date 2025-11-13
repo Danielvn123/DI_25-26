@@ -1,0 +1,40 @@
+package com.jdojo.exercicios;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+
+public class Exercicio21_XanelaBindinghelper extends Application{
+		
+		public void start(Stage stage) throws Exception {
+						
+			Button btn = new Button();
+			
+			StackPane root = new StackPane(btn);
+			
+			scene.fillProperty().bind(
+					Bindings.when(btn.pressedProperty())
+						.then(Color.LIGHTGREEN)
+						.otherwise(Color.LIGHTBLUE)
+			);
+			
+			
+			
+			
+
+			VBox root = new VBox(btn);		
+			Scene scene = new Scene(root, 300, 250);
+			stage.setScene(scene);
+			stage.setTitle("Indicador Par / Impar");
+			stage.show();
+		}
+
+		public static void main(String[] args) {
+			launch();
+		}
+	}
+
