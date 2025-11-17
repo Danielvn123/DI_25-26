@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="javafx.scene.paint.Color"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="java.time.LocalTime"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.HBox"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.VBox"/>
     <fullyQualifiedTypeName name="javafx.beans.property.SimpleIntegerProperty"/>
     <fullyQualifiedTypeName name="javafx.beans.binding.NumberBinding"/>
@@ -25,9 +23,13 @@
     <fullyQualifiedTypeName name="javafx.beans.property.StringProperty"/>
     <fullyQualifiedTypeName name="javafx.beans.property.IntegerProperty"/>
     <fullyQualifiedTypeName name="javafx.application.Application"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
     <fullyQualifiedTypeName name="javafx.beans.binding.DoubleBinding"/>
-    <fullyQualifiedTypeName name="javafx.beans.binding.Bindings"/>
     <fullyQualifiedTypeName name="javafx.beans.binding.StringBinding"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
+    <fullyQualifiedTypeName name="javafx.beans.binding.Bindings"/>
+    <fullyQualifiedTypeName name="javafx.scene.layout.Background"/>
+    <fullyQualifiedTypeName name="java.awt.Paint"/>
+    <fullyQualifiedTypeName name="javafx.scene.paint.Color"/>
 </qualifiedTypeNameHistroy>
