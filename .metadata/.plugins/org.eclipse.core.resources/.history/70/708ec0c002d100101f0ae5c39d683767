@@ -1,0 +1,109 @@
+package com.jdojo.exerciciosT3;
+
+	import javafx.application.Application;
+	import javafx.beans.binding.Bindings;
+	import javafx.scene.Scene;
+	import javafx.scene.control.Button;
+	import javafx.scene.control.CheckBox;
+	import javafx.scene.control.Label;
+	import javafx.scene.control.Slider;
+	import javafx.scene.control.TextField;
+	import javafx.scene.layout.HBox;
+	import javafx.scene.layout.VBox;
+	import javafx.stage.Stage;
+
+	public class Exercicio5_ControladorPropiedadesStage {
+	    public void start(Stage stage) throws Exception {
+	        //1. Creamos os controis
+	        Label opacityLabel = new Label("Opacidade:");
+	        Slider opacitySld = new Slider(0.0, 1.0, 0.5);
+
+	        CheckBox resizableBox = new CheckBox("Redimensionable");
+	        // Por defecto sí se pode redimensionar
+	        resizableBox.setSelected(true);
+
+	        TextField minWidthField = new TextField("200");
+			TextField minHeightField = new TextField("150");
+			TextField maxWidthField = new TextField("800");
+			TextField maxHeightField = new TextField("600");
+
+			Button aplicarLimitesBtn = new Button("Aplicar Límites");
+			Label avisoLabel = new Label();
+	    
+	        // 2. Control opacidade e label
+	        stage.opacityProperty().bind(opacitySld.valueProperty());
+
+	        /*opacityLabel.textProperty().bind(Bindings.createStringBinding(
+				()-> {
+					return String.format("Opacidade : %.2f ", opacitySld.getValue());
+				},
+				opacitySld.valueProperty()));*/
+
+			opacityLabel.textProperty().bind(Bindings.format("Opacidade : %.2f ", opacitySld.valueProperty()));
+			
+			resizableBox.selectedProperty().addListener((obs,oldVal,newVal) -> {
+				stage.setResizable(newVal);
+			});
+
+			// Cada que intente clickar estou intentado setear e non podo setear unha propiedade vinculada.
+			// resizableBox.selectedProperty().bind(stage.resizableProperty());
+
+
+			aplicarLimitesBtn.setOnAction(e -> {
+				try{
+					double minWidth = Double.parseDouble(minWidthField.getText());
+					double minHeight = Double.parseDouble(minHeightField.getText());
+					double maxWidth = Double.parseDouble(maxWidthField.getText());
+					double maxHeight = Double.parseDouble(maxHeightField.getText());
+
+					if (minWidth > maxWidth || minHeight > maxHeight ) {
+						avisoLabel.setText("Os valores mínimos non poden ser maiores que os máximos");
+						avisoLabel.setStyle("-fx-text-fill: red;");
+						return;
+					}
+					
+					stage.setMinWidth(minWidth);
+					stage.setMinHeight(minHeight);
+					stage.setMaxWidth(maxWidth);
+					stage.setMaxHeight(maxHeight);
+
+					avisoLabel.setText("Límites aplicados correctamente!");
+					avisoLabel.setStyle("-fx-text-fill: green;");
+
+				} catch(NumberFormatException ex) {
+
+				}
+			});
+
+
+	        HBox opacidadeLayout = new HBox(opacityLabel, opacitySld);
+			HBox anchoMinLayout = new HBox(10, new Label("Ancho mín:"), minWidthField);
+			HBox altoMinLayout = new HBox(10, new Label("Alto mín:"), minHeightField);
+			HBox anchoMaxLayout = new HBox(10, new Label("Ancho máx:"), maxWidthField);
+			HBox altoMaxLayout = new HBox(10, new Label("Alto máx:"), maxHeightField);
+
+	        VBox root = new VBox(10,
+	                new Label("Control de opacidade"),
+					opacidadeLayout,
+					resizableBox,
+					new Label("Límites de tamaño:"),
+					anchoMinLayout,
+					altoMinLayout,
+					anchoMaxLayout,
+					altoMaxLayout,
+					aplicarLimitesBtn,
+					avisoLabel				
+					);
+			
+			
+			Scene scene = new Scene(root, 400, 350);
+			stage.setScene(scene);
+			stage.setTitle("Controlador de propiedades do Stage");
+			stage.show();
+	    }
+	    
+	    public static void main(String[] args) {
+	        launch(args);
+	    }
+	}
+	

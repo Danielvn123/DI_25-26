@@ -11,5 +11,8 @@ module HelloFX {
 
     opens com.jdojo.intro to javafx.graphics, javafx.base;
     opens com.jdojo.binding to javafx.graphics, javafx.base;
-    opens com.jdojo.exercicios to javafx.graphics, javafx.base;
+    opens com.jdojo.exerciciosT2 to javafx.graphics, javafx.base;
+    opens com.jdojo.exerciciosT3 to javafx.graphics, javafx.base;
+    opens com.jdojo.stage to javafx.graphics, javafx.base;
+    opens vilas_daniel to javafx.graphics, javafx.base;
     }

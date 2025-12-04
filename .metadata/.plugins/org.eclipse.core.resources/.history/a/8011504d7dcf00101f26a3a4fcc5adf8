@@ -1,0 +1,29 @@
+package com.jdojo.exerciciosT3;
+
+import javafx.application.Application;
+import javafx.beans.binding.Bindings;
+import javafx.scene.control.Label;
+import javafx.stage.Stage;
+
+public class Exercicio3_LeerPropiedadesXanela {
+	
+	public class Exercicio3 extends Application{
+		
+		public void start(Stage stage) throws Exception{
+			
+			Label xLabel = new Label();
+			Label yLabel = new Label();
+			Label widthLabel = new Label();
+			Label heightLabel = new Label();
+
+			
+			xLabel.textProperty().bind(Bindings.concat("X: ", stage.xProperty()));
+			yLabel.textProperty().bind(Bindings.concat("X: ", stage.yProperty()));
+			widthLabel.textProperty().bind(Bindings.concat("X: ", stage.widthProperty()));
+			heightLabel.textProperty().bind(Bindings.concat("X: ", stage.heightProperty()));
+
+			
+		}
+	}
+
+}
