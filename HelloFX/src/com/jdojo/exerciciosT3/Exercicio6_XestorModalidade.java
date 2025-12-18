@@ -1,5 +1,35 @@
 package com.jdojo.exerciciosT3;
 
-public class Exercicio6_XestorModalidade {
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
+public class Exercicio6_XestorModalidade extends Application{
+	
+	public void start(Stage stage) throws Exception{
+		
+		
+		ComboBox<String> comboModality = new ComboBox<>();
+		comboModality.getItems().addAll("NONE", "WINDOWS_MODAL","APPLICATION_MODAL");
+		Button abrirVenta = new Button("Abrir venta");
+		
+		abrirVenta.setOnAction(e->{
+			String seleccion = comboModality.getValue();
+	});
+	
+	VBox root = new VBox(10, comboModality, abrirVenta);
+	Scene scene = new Scene(root, 300, 200);
+	
+	stage.setScene(scene);
+	stage.setTitle("Xestor de modalidade");
+	stage.show();
+
+}
+
+public static void main(String[] args) {
+	launch(args);
+}
 }
