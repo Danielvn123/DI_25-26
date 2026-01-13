@@ -29,9 +29,10 @@
     <fullyQualifiedTypeName name="javafx.scene.layout.Background"/>
     <fullyQualifiedTypeName name="java.awt.Paint"/>
     <fullyQualifiedTypeName name="javafx.scene.paint.Color"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
     <fullyQualifiedTypeName name="javafx.stage.Screen"/>
     <fullyQualifiedTypeName name="javafx.geometry.Rectangle2D"/>
     <fullyQualifiedTypeName name="javafx.beans.binding.Bindings"/>
+    <fullyQualifiedTypeName name="javafx.stage.Modality"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
 </qualifiedTypeNameHistroy>
