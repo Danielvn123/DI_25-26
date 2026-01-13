@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ex1Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jdojo.fxmlexercicios.Controlador.Ex1Controller">
    <children>
-      <Label layoutX="100.0" layoutY="85.0" text="Operando 1" />
-      <Label layoutX="100.0" layoutY="174.0" text="Operando 2" />
-      <TextField layoutX="233.0" layoutY="81.0" />
-      <TextField layoutX="233.0" layoutY="170.0" />
-      <TextField layoutX="233.0" layoutY="304.0" />
-      <Label layoutX="106.0" layoutY="308.0" text="Resultado" />
-      <Button layoutX="127.0" layoutY="220.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="357.0" text="Sumar" />
+      <Label fx:id="Label1" layoutX="68.0" layoutY="85.0" text="Operando 1" />
+      <Label fx:id="Label2" layoutX="68.0" layoutY="174.0" text="Operando 2" />
+      <TextField fx:id="TextField1" layoutX="204.0" layoutY="81.0" prefHeight="35.0" prefWidth="178.0" />
+      <TextField fx:id="TextField2" layoutX="204.0" layoutY="160.0" prefHeight="35.0" prefWidth="178.0" />
+      <TextField fx:id="TextField3" layoutX="204.0" layoutY="294.0" prefHeight="35.0" prefWidth="178.0" />
+      <Label fx:id="Label3" layoutX="74.0" layoutY="308.0" text="Resultado" />
+      <Button fx:id="Boton1" layoutX="127.0" layoutY="220.0" mnemonicParsing="false" onAction="#sumar" prefHeight="45.0" prefWidth="357.0" text="Sumar" />
    </children>
 </AnchorPane>

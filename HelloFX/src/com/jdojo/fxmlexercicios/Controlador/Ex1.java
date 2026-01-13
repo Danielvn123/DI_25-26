@@ -10,11 +10,11 @@ public class Ex1 extends Application {
 	
 	public void start(Stage stage) throws Exception{
 		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(Ex1.class.getResource("/com.jdojo/fmxlexercicios/Vista/ExVista.fxml"));
+		loader.setLocation(Ex1.class.getResource("/com/jdojo/fxmlexercicios/Vista/Ex1Vista.fxml"));
 		
 		// Crear unha vista
 		
-		Pane ventana = (Pane) loader.load();
+		Pane ventana = loader.load();
 		
 		Scene scene = new Scene(ventana);
 		
