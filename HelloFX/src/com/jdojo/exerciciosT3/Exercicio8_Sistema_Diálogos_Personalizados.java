@@ -1,7 +1,0 @@
-package com.jdojo.exerciciosT3;
-
-public class Exercicio8_Sistema_Diálogos_Personalizados {
-
-	
-	
-}

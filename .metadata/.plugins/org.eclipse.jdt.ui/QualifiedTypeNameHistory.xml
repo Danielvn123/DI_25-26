@@ -33,6 +33,8 @@
     <fullyQualifiedTypeName name="javafx.geometry.Rectangle2D"/>
     <fullyQualifiedTypeName name="javafx.beans.binding.Bindings"/>
     <fullyQualifiedTypeName name="javafx.stage.Modality"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Alert.AlertType"/>
     <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
 </qualifiedTypeNameHistroy>

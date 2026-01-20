@@ -54,7 +54,8 @@ public class ShowAndWaitApp extends Application {
         this.lastOpenStage = stage;
 
         System.out.println("Antes de stage.showAndWait(): " + stageNumber);
-        stage.showAndWait(); // Amosar a xanela e esperar a que se peche
+        stage.showAndWait(); // Aquí se detén a execución!!!! 
+        // Polo que non se amosará o println seguinte ata pechar a xanela 
         System.out.println("Despois de stage.showAndWait(): " + stageNumber);
     }
 }
