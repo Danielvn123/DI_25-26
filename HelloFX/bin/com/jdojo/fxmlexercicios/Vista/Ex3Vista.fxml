@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jdojo.fxmlexercicios.Controlador.Ex3Controller">
+   <children>
+      <Label layoutX="40.0" layoutY="41.0" text="Nombre" />
+      <Label layoutX="47.0" layoutY="239.0" text="Idade" />
+      <Label layoutX="39.0" layoutY="144.0" text="Apelidos" />
+      <TextField fx:id="TxNome" layoutX="42.0" layoutY="84.0" />
+      <TextField fx:id="TxApelidos" layoutX="39.0" layoutY="188.0" />
+      <TextField fx:id="TxIdade" layoutX="42.0" layoutY="275.0" prefHeight="17.0" prefWidth="98.0" />
+      <TableView fx:id="Tabla" layoutX="300.0" layoutY="66.0" prefHeight="294.0" prefWidth="262.0">
+        <columns>
+          <TableColumn fx:id="Nome" prefWidth="75.0" text="Nome" />
+          <TableColumn fx:id="Apelidos" prefWidth="75.0" text="Apelidos" />
+            <TableColumn fx:id="Idade" prefWidth="75.0" text="Idade" />
+        </columns>
+      </TableView>
+      <Button fx:id="Boton" layoutX="42.0" layoutY="327.0" mnemonicParsing="false" onAction="#AgregarPersona" prefHeight="33.0" prefWidth="171.0" text="Agregar" />
+   </children>
+</AnchorPane>
