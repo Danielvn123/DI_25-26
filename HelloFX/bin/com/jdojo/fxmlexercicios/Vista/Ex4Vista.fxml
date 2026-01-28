@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jdojo.fxmlexercicios.Controlador.Ex3Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jdojo.fxmlexercicios.Controlador.Ex4Controller">
    <children>
       <Label layoutX="40.0" layoutY="26.0" text="Nombre" />
       <Label layoutX="47.0" layoutY="192.0" text="Idade" />
@@ -15,13 +15,15 @@
       <TextField fx:id="TxNome" layoutX="42.0" layoutY="50.0" prefHeight="44.0" prefWidth="195.0" />
       <TextField fx:id="TxApelidos" layoutX="42.0" layoutY="131.0" prefHeight="44.0" prefWidth="195.0" />
       <TextField fx:id="TxIdade" layoutX="42.0" layoutY="213.0" prefHeight="44.0" prefWidth="195.0" />
-      <TableView fx:id="Tabla" layoutX="300.0" layoutY="66.0" prefHeight="294.0" prefWidth="262.0">
+      <TableView fx:id="Tabla" layoutX="300.0" layoutY="66.0" onMouseClicked="#seleccionar" prefHeight="294.0" prefWidth="262.0">
         <columns>
           <TableColumn fx:id="Nome" prefWidth="75.0" text="Nome" />
           <TableColumn fx:id="Apelidos" prefWidth="75.0" text="Apelidos" />
             <TableColumn fx:id="Idade" prefWidth="75.0" text="Idade" />
         </columns>
       </TableView>
-      <Button fx:id="Boton" layoutX="42.0" layoutY="303.0" mnemonicParsing="false" onAction="#AgregarPersona" prefHeight="36.0" prefWidth="195.0" text="Agregar" />
+      <Button fx:id="Boton" layoutX="43.0" layoutY="265.0" mnemonicParsing="false" onAction="#AgregarPersona" prefHeight="36.0" prefWidth="195.0" text="Agregar" />
+      <Button fx:id="Boton2" layoutX="41.0" layoutY="316.0" mnemonicParsing="false" onAction="#ModificarPersona" prefHeight="44.0" prefWidth="91.0" text="Modificar" />
+      <Button fx:id="Boton3" layoutX="146.0" layoutY="316.0" mnemonicParsing="false" onAction="#BorrarPersona" prefHeight="44.0" prefWidth="91.0" text="Borrar" />
    </children>
 </AnchorPane>
